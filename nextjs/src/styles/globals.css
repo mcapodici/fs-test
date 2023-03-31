@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind */
+
+.anchor {
+  @apply underline text-blue-600;
+}
+
+.anchor:hover {
+  @apply text-blue-800;
+}
+
+.anchor:visited:visited {
+  @apply text-purple-600;
+}
+
+.button {
+  @apply px-2 md:px-6 py-2.5 font-medium text-xs leading-tight uppercase rounded hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out;
+}
+
+.button.big {
+  @apply px-7 py-3
+}
+
+.button.flatwhite {
+  @apply shadow-none bg-transparent text-blue-600 hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-200;     
+}
+
+.button.red {
+  @apply shadow-md bg-red-600 text-white hover:bg-red-700 focus:bg-red-700 active:bg-red-800;
+}
+
+.button.blue {
+  @apply shadow-md bg-blue-600 text-white hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-800;
+}
+
+.button.disabled {
+  @apply bg-gray-300 text-white hover:bg-gray-300 focus:bg-gray-300 active:bg-gray-300 cursor-auto;
+}
+
+.input {
+  @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+@keyframes contentPlaceholderFrames {
+  0% {
+    background: #eeeeee;
+  }
+  25% {
+    background: #cccccc;
+  }
+  50% {
+    background: #eeeeee;
+  }
+  75% {
+    background: #cccccc;
+  }
+  100% {
+    background: #eeeeee;
+  }
+}
+
+.content-placeholder {
+  animation: contentPlaceholderFrames 2s linear 0s infinite normal none;
+}
+
+.menu-item {
+  @apply block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-900 hover:font-semibold focus:text-gray-900 focus:font-semibold transition duration-150 ease-in-out;
+}
+
+.title {
+  @apply text-5xl md:text-6xl xl:text-7xl py-6 font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-black;
+}
